@@ -38,9 +38,18 @@ h1 {
 
 
 
+
+/*Scene two Css*/
+
 #sceneTwo { height:1100px; text-align: center; padding-top: 700px;}
 
 #peg1 { position: relative; }
 #peg2 { position: relative; }
 #peg3 { position: relative; }
 #peg4 { position: relative; }
+
+
+/*Scene Three CSS*/
+
+#sceneThree { height:100px; text-align: center; padding-top: 700px;}
+#move1 {position: relative;}
