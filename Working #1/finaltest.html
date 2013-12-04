@@ -32,10 +32,25 @@
 
 	<div =id"container">
 		
-
-			<div id="large">
-				<img src="green.png"id="peg4">		
+		<!-- stackable jar pngs -->
+			<div id="sceneTwo">
+				<img src="./images/SceneTwo/green.png"id="peg1">
+				<img src="./images/SceneTwo/green.png"id="peg2">
+				<img src="./images/SceneTwo/green.png"id="peg3">
+				<img src="./images/SceneTwo/green.png"id="peg4">		
 			</div>
+
+
+		<!-- move test -->
+
+			<!-- <div id="sceneThree">
+				<img src="./images/SceneTwo/green.png"id="move1">
+				<img src="./images/SceneTwo/green.png"id="move2">
+			</div> -->
+	
+
+
+
 	</div>
 
 
@@ -47,18 +62,55 @@
 	
 	
 
-	
+	<!-- this script is for Scene Two - the Stackable Jars -->
 	<script>
+
 		$(document).ready(function() {
 			var controller = $.superscrollorama();
-	
-		
 
 		
-			controller.addTween('#peg4', TweenMax.from( $('#peg4'), .1, {css:{right:'950px'}, ease:Quad.easeInOut}));
+			controller.addTween('#peg1', TweenMax.from( $('#peg1'), .1, {css:{right:'100px'}, ease:Quad.easeInOut}));
+			controller.addTween('#peg2', TweenMax.from( $('#peg2'), .1, {css:{right:'250px'}, ease:Quad.easeInOut}));
+			controller.addTween('#peg3', TweenMax.from( $('#peg3'), .1, {css:{right:'350px'}, ease:Quad.easeInOut}));
+			controller.addTween('#peg4', TweenMax.from( $('#peg4'), .1, {css:{right:'450px'}, ease:Quad.easeInOut}));
 			
 
 		});
+
+
+
+
+	</script>
+
+	<!-- this is a test to see if I can get the MOVE effect to work	 -->
+	<script>
+
+	$(document).ready(function() {
+	var controller = $.superscrollorama();
+
+	controller.pin($('#examples-2'), 3000, {
+	  	anim: (new TimelineLite())
+	    .append(
+	      TweenMax.fromTo($('#move-it'), .5, 
+	        {css:{left: -200, top: 500}, immediateRender:true}, 
+	        {css:{top: -400}})
+	    )
+	    .append(
+	      TweenMax.to($('#move-it'), .5, 
+	        {css:{left: 200}})
+	    )
+	    .append(
+	      TweenMax.to($('#move-it'), .5, 
+	        {css:{top: -200}})
+	    )
+	    .append(
+	      TweenMax.to($('#move-it'), .5, 
+	        {css:{left: 0}})
+	    )
+	});
+
+	</script>
+
 	</script>
 
 </body></html>

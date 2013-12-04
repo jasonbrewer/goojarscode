@@ -7,7 +7,7 @@ h1 {
 
 #container {
 	position: relative;
-	position: relative;}
+}
 
 
 #fullpage {
@@ -38,6 +38,9 @@ h1 {
 
 
 
-#large { height:1100px; text-align: center; padding-top: 700px;}
+#sceneTwo { height:1100px; text-align: center; padding-top: 700px;}
 
+#peg1 { position: relative; }
+#peg2 { position: relative; }
+#peg3 { position: relative; }
 #peg4 { position: relative; }
