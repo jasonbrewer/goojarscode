@@ -42,6 +42,9 @@
 
 
 		<!-- move test -->
+		<Div id="blockDiv">
+
+		</div>
 
 			<div id="sceneThree">
 				<img src="./images/SceneTwo/green.png"id="move1">
@@ -88,23 +91,23 @@
 	$(document).ready(function() {
 	var controller = $.superscrollorama();
 
-	controller.pin($('#examples-2'), 3000, {
+	controller.pin($('#move1'), 3000, {
 	  	anim: (new TimelineLite())
 	    .append(
-	      TweenMax.fromTo($('#move-it'), .5, 
+	      TweenMax.fromTo($('#move1'), .5, 
 	        {css:{left: -200, top: 500}, immediateRender:true}, 
 	        {css:{top: -400}})
 	    )
 	    .append(
-	      TweenMax.to($('#move-it'), .5, 
+	      TweenMax.to($('#move1'), .5, 
 	        {css:{left: 200}})
 	    )
 	    .append(
-	      TweenMax.to($('#move-it'), .5, 
+	      TweenMax.to($('#move1'), .5, 
 	        {css:{top: -200}})
 	    )
 	    .append(
-	      TweenMax.to($('#move-it'), .5, 
+	      TweenMax.to($('#move1'), .5, 
 	        {css:{left: 0}})
 	    )
 	});
