@@ -1,7 +1,7 @@
 
 
 
-
+/*THIS IS THE BACKGROUND */
 #fullpage {
 
 
@@ -17,6 +17,8 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  z-index: -1;
 }
 
 
@@ -29,8 +31,42 @@
 }
 
 
+/*THIS IS THE LOGO*/
 
-.logo {}
+#logo {
+  position: relative;
+  text-align: center;
+
+}
 
 
-.jars {}
+/*THIS IS THE JARS FALLING*/
+
+.jars {
+ 
+  
+}
+
+#one {
+  position: relative;
+  top:500px;
+  left:500px;
+  z-index: 1;
+  
+}
+
+#two {
+  position: relative;
+  top: 570px;
+  left:370px;
+  z-index: 2;
+  
+}
+
+#three {
+  position: relative;
+  top:640px;
+  left:242px;
+  z-index: 3;
+  
+}
